@@ -25,6 +25,9 @@ class Field extends components\BaseComponent implements components\SortInterface
         $this->params['order']           = null;
         $this->params['missing']         = null;
         $this->params['ignore_unmapped'] = null;
+        $this->params['script']          = null;
+        $this->params['type']            = null;
+        $this->params['params']          = null;
 
         parent::__construct($hashMap);
     }
@@ -39,6 +42,9 @@ class Field extends components\BaseComponent implements components\SortInterface
                 'order'           => $this->params["order"],
                 'missing'         => $this->params["missing"],
                 'ignore_unmapped' => $this->params["ignore_unmapped"],
+                'script'          => $this->params["script"],
+                'type'            => $this->params["type"],
+                'params'          => $this->params["params"]
             ),
         );
 
