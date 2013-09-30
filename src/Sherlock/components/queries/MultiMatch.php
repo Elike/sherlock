@@ -46,4 +46,17 @@ class MultiMatch extends \Sherlock\components\BaseComponent implements \Sherlock
         parent::__construct($hashMap);
     }
 
+    public function toArray()
+    {
+        $ret = array(
+            'multi_match' => array(
+            'query' => $this->params["query"],
+            'fields' => $this->params["fields"],
+            'operator' => $this->params['operator'],
+            'fuzziness' => $this->params['fuzziness'] ,
+            )
+        );
+
+        return $ret;
+    }
 }
