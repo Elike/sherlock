@@ -32,7 +32,7 @@ class Nested extends \Sherlock\components\BaseComponent implements \Sherlock\com
             'nested' =>
             array(
                 'path'   => $this->params["path"],
-                'query'  => $this->params["query"],
+                'filter'  => $this->params["filter"],
                 '_cache' => $this->params["_cache"],
             ),
         );
